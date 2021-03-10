@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Header from '../Header/Header';
 
@@ -19,8 +19,8 @@ const LeagueDetailsPage = () => {
 
     return (
         <>
-            <Header>
-                <h1>Details Page</h1>
+            <Header white>
+                <img style={{width: '120px'}} src={leagueDetails.strBadge} alt="badge"/>
             </Header>
             <LeagueDetails leagueDetails={leagueDetails}/>
         </>

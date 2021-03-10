@@ -9,10 +9,13 @@
     width: 50px;
     margin: 0 10px;
     transform: scale(1);
-    transition: all 0.4s;
+    transition: all 0.3s;
 }
 .social-icons img:hover{
-    cursor: pointer;
     filter: grayscale(100%);
     transform: scale(1.1);
+}
+.social-icons img:active{
+    cursor: pointer;
+    transform: scale(0.9);
 }

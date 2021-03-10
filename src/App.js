@@ -18,6 +18,9 @@ function App() {
         <Route path="/league/:id">
           <LeagueDetailsPage />
         </Route>
+        <Route path="*">
+          NotFound
+        </Route>
       </Switch>
     </Router>
   );

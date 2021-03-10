@@ -5,7 +5,6 @@ import Header from '../Header/Header';
 import './Home.css'
 
 
-
 const Home = () => {
     const [leagues, setLeagues] = useState([]);
     useEffect(() => {
