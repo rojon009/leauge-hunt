@@ -1,0 +1,10 @@
+.card-wrapper{
+    width: 80vw;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+

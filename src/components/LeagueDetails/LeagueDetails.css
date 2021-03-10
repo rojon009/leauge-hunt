@@ -1,0 +1,44 @@
+.league-details-page .preview {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #3A42FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    overflow: hidden;
+}
+.league-details-page .preview .preview-detail h3{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.league-details-page .preview .preview-detail p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+.league-details-page .preview-img img {
+    min-width: 100%;
+    max-width: 400px;
+    display: flex;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.league-details-page .description p{
+    color:white;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+
+@media screen and (max-width: 910px) {
+    .league-details-page .preview {
+        flex-direction: column;
+    }
+    .league-details-page .preview .preview-detail {
+        margin-bottom: 30px;
+    }
+  }
