@@ -10,6 +10,7 @@ const LeagueDetailsPage = () => {
     const [status, setStatus] = useState(true);
     const [leagueDetails, setLeagueDetails] = useState({});
     useEffect(() => {
+        window.scrollTo(0, 0)
         fetch(`https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${id}`)
             .then((res) => res.json())
             .then((apiData) => {
