@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Error from "../Error/Error";
 import Header from "../Header/Header";
 import LeagueDetails from "../LeagueDetails/LeagueDetails";
 import "./LeagueDetailsPage.css";
@@ -31,7 +32,7 @@ const LeagueDetailsPage = () => {
                 />
             </Header>
             {
-                status ? <LeagueDetails leagueDetails={leagueDetails} /> : <h1 className="invalid-text">Invalid ID passed Data could not founded.</h1>
+                status ? <LeagueDetails leagueDetails={leagueDetails} /> : <Error />
             }
         </>
     );

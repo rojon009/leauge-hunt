@@ -9,13 +9,6 @@
 .not-found img{
     width: 40%;
 }
-.not-found .error-link{
-    color: #15b115;
-    font-size: 25px;
-    margin-top: 30px;
-    display: block;
-    text-align: center;
-}
 
 .not-found h1{
     font-size: 40px;
@@ -29,6 +22,7 @@
     }
     .not-found img{
         width: 60%;
+        order: 1;
     }
     .not-found h1{
         font-size: 35px;

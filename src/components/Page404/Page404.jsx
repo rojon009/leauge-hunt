@@ -8,7 +8,7 @@ const Page404 = ({wait}) => {
             <img src={'https://s3-us-west-2.amazonaws.com/s.cdpn.io/4424790/Mirror.png'} alt="not Found"/>
             <div>
                 <h1>404 this page is not founded</h1>
-                <Link className="error-link" to="/">Goto Home</Link>
+                <Link className="home-link" to="/">Goto Home</Link>
             </div>
         </div>
     );
