@@ -41,4 +41,10 @@
     .league-details-page .preview .preview-detail {
         margin-bottom: 30px;
     }
+    .league-details-page .preview .preview-detail h3{
+        font-size: 25px;
+    }
+    .league-details-page .preview .preview-detail p{
+        font-size: 18px;
+    }
   }
