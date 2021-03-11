@@ -1,7 +1,7 @@
 # League Hunt - react router project
 ### [Live Site](https://league-react-router.netlify.app/)
 
-This site is used ** [thesportsdb](https://www.thesportsdb.com/) ** API.
+This site is used **[thesportsdb](https://www.thesportsdb.com/)** API.
 
 
 # Features
