@@ -15,8 +15,6 @@ import './LeagueDetails.css'
 const LeagueDetails = ({leagueDetails}) => {
     const {strSport, strLeagueAlternate, intFormedYear, strGender, strCountry,strLeague, strWebsite, strFacebook, strTwitter, strYoutube, strDescriptionEN, strDescriptionDE, strDescriptionIT, strDescriptionCN} = leagueDetails;
 
-    
-    
     return (
         <div className="league-details-page"> 
             <div className="preview">

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
 import Header from "../Header/Header";
-
-import "./LeagueDetailsPage.css";
 import LeagueDetails from "../LeagueDetails/LeagueDetails";
+import "./LeagueDetailsPage.css";
 
 const LeagueDetailsPage = () => {
     const { id } = useParams();
@@ -19,7 +18,7 @@ const LeagueDetailsPage = () => {
                 }
                 setLeagueDetails(league);
             })
-            .catch((err) => setStatus(false));
+            .catch(() => setStatus(false));
     }, [id]);
 
     return (

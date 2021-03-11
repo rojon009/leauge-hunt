@@ -8,7 +8,7 @@ const CardsWrapper = ({leagues}) => {
                 leagues.slice(0,50).map(league=> <Card key={league.idLeague} league={league} />)
             }
         </div>
-    );
+    )
 };
 
 export default CardsWrapper;
