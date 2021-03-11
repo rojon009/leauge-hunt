@@ -30,4 +30,13 @@
     background: blue;
     padding: 7px 20px;
     font-weight: 700;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.356);
+    transition: all 0.3s;
+}
+.card .link:hover{
+    background: rgba(0, 0, 255, 0.671);
+}
+.card .link:active{
+    box-shadow: 0;
 }
