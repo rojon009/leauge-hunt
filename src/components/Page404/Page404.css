@@ -1,0 +1,26 @@
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.not-found img{
+    width: 40%;
+}
+
+.not-found h1{
+    font-size: 40px;
+    color: rgb(235, 90, 90);
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

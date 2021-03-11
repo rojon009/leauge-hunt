@@ -14,6 +14,9 @@ import './LeagueDetails.css'
 
 const LeagueDetails = ({leagueDetails}) => {
     const {strSport, strLeagueAlternate, intFormedYear, strGender, strCountry,strLeague, strWebsite, strFacebook, strTwitter, strYoutube, strDescriptionEN, strDescriptionDE, strDescriptionIT, strDescriptionCN} = leagueDetails;
+
+    
+    
     return (
         <div className="league-details-page"> 
             <div className="preview">
@@ -26,13 +29,13 @@ const LeagueDetails = ({leagueDetails}) => {
                 </div>
                 <div className="preview-img">
                     {
-                        strGender.toLowerCase() === 'male' && <img src={maleImg} alt="male"/>
+                        strGender === 'Male' && <img src={maleImg} alt="male"/>
                     }
                     {
-                        strGender.toLowerCase() === 'female' && <img src={femaleImg} alt="male"/>
+                        strGender === 'Female' && <img src={femaleImg} alt="male"/>
                     }
                     {   
-                        strGender.toLowerCase() === 'mixed' && <img src={mixedImg} alt="male"/>
+                        strGender === 'Mixed' && <img src={mixedImg} alt="male"/>
                     }
                 </div>
             </div>
@@ -41,18 +44,10 @@ const LeagueDetails = ({leagueDetails}) => {
                 <p>{strDescriptionDE || strDescriptionCN || strDescriptionIT}</p>
             </div>
             <div className="social-icons">
-                {
-                    strWebsite && <SocialLink link={strWebsite} icon={WebsiteIcon} />
-                }
-                {
-                    strFacebook && <SocialLink link={strFacebook} icon={FacebookIcon} />
-                }
-                {
-                    strTwitter && <SocialLink link={strTwitter} icon={TwitterIcon} />
-                }
-                {
-                    strYoutube && <SocialLink link={strYoutube} icon={YoutubeIcon} />
-                }
+                <SocialLink link={strWebsite || 'https://www.programming-hero.com/'} icon={WebsiteIcon} />
+                <SocialLink link={strFacebook || 'https://www.facebook.com'} icon={FacebookIcon} />
+                <SocialLink link={strTwitter || 'https://www.twitter.com'} icon={TwitterIcon} />
+                <SocialLink link={strYoutube || 'https://www.youtube.com'} icon={YoutubeIcon} />
             </div>
             </div>
     );
