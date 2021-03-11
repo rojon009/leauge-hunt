@@ -44,10 +44,10 @@ const LeagueDetails = ({leagueDetails}) => {
                 <p>{strDescriptionDE || strDescriptionCN || strDescriptionIT}</p>
             </div>
             <div className="social-icons">
-                <SocialLink link={strWebsite || 'https://www.programming-hero.com/'} icon={WebsiteIcon} />
-                <SocialLink link={strFacebook || 'https://www.facebook.com'} icon={FacebookIcon} />
-                <SocialLink link={strTwitter || 'https://www.twitter.com'} icon={TwitterIcon} />
-                <SocialLink link={strYoutube || 'https://www.youtube.com'} icon={YoutubeIcon} />
+                <SocialLink link={strWebsite || 'www.programming-hero.com/'} icon={WebsiteIcon} />
+                <SocialLink link={strFacebook || 'www.facebook.com'} icon={FacebookIcon} />
+                <SocialLink link={strTwitter || 'www.twitter.com'} icon={TwitterIcon} />
+                <SocialLink link={strYoutube || 'www.youtube.com'} icon={YoutubeIcon} />
             </div>
             </div>
     );

@@ -3,7 +3,7 @@ import './SocialLink.css'
 
 const SocialLink = ({link, icon}) => {
     return (
-        <a target="blank" href={`http://${link}`}>
+        <a target="blank" href={`https://${link}`}>
             <img src={icon} alt="website"/>
         </a>
     );
